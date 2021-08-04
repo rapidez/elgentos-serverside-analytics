@@ -7,18 +7,12 @@
     "homepage": "https://rapidez.io",
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "repositories": [
-        {
-            "type": "vcs",
-            "url":  "git@github.com:rapidez/core.git"
-        }
-    ],
     "require": {
         "php": "^7.4",
         "illuminate/database": "^8.0",
         "illuminate/support": "^8.0",
         "illuminate/view": "^8.0",
-        "rapidez/core": "dev-master",
+        "rapidez/core": "~0.1",
         "irazasyed/laravel-gamp": "^1.8"
     },
     "autoload": {
