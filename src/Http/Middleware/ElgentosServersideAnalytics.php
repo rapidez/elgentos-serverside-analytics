@@ -3,9 +3,7 @@
 namespace Rapidez\ElgentosServersideAnalytics\Http\Middleware;
 
 use Closure;
-use Illuminate\Http\Response;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Str;
 use Irazasyed\LaravelGAMP\Facades\GAMP;
 use Rapidez\Core\Models\Config;
