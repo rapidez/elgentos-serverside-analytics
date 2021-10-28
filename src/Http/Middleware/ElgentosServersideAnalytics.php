@@ -6,7 +6,6 @@ use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Irazasyed\LaravelGAMP\Facades\GAMP;
-use Rapidez\Core\Models\Config;
 
 class ElgentosServersideAnalytics
 {
