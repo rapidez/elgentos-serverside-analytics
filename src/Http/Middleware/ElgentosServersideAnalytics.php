@@ -19,6 +19,10 @@ class ElgentosServersideAnalytics
      */
     public function handle(Request $request, Closure $next)
     {
+        if (config('gamp.is_disabled')) {
+            return $next($request);
+        }
+
         $gaUserId = $request->hasCookie('gaUserId') ? $request->cookie('gaUserId') : Str::uuid();
         if (!$request->hasCookie('gaUserId')) {
             $result = $next($request)->withCookie(cookie()->forever('gaUserId', $gaUserId));
