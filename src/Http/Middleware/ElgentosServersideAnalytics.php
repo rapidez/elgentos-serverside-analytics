@@ -27,7 +27,7 @@ class ElgentosServersideAnalytics
         config(['frontend.gaUserId' => $gaUserId]);
 
         $gamp = GAMP::setClientId($gaUserId)
-            ->setUserAgentOverride($request->userAgent())
+            ->setUserAgentOverride($request->userAgent() ?: 'Unknown')
             ->setDocumentPath($request->path())
             ->setIpOverride($request->ip())
             ->sendPageview();
