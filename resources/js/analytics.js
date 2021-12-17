@@ -11,13 +11,13 @@ document.addEventListener('turbolinks:load', () => {
                 $cartId: String
                 $gaUserId: String
             ) {
-              AddGaUserId (
-                cartId: $cartId
-                gaUserId: $gaUserId
-              ) {
-                cartId
-                maskedId
-              }
+                AddGaUserId (
+                    cartId: $cartId
+                    gaUserId: $gaUserId
+                ) {
+                    cartId
+                    maskedId
+                }
             }`,
             variables: {
                 cartId: localStorage.mask,
