@@ -25,7 +25,11 @@ class ElgentosServersideAnalytics
 
         $gaUserId = $request->hasCookie('gaUserId') ? $request->cookie('gaUserId') : Str::uuid();
         if (!$request->hasCookie('gaUserId')) {
-            $result = $next($request)->withCookie(cookie()->forever('gaUserId', $gaUserId));
+            $result = $next($request);
+            
+            if(method_exists($result, 'withCookie')) {
+                $result = $result->withCookie(cookie()->forever('gaUserId', $gaUserId));
+            }
         }
 
         config(['frontend.gaUserId' => $gaUserId]);
