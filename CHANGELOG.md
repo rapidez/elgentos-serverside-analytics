@@ -1,6 +1,12 @@
 # Changelog
 
-## [Unreleased](https://github.com/org/repo/compare/0.3.0...master)
+## [Unreleased](https://github.com/org/repo/compare/0.3.1...master)
+
+## [0.3.1](https://github.com/org/repo/compare/0.3.0...0.3.1) - 2022-10-24
+
+### Fixed
+
+- Check if the request is a type where a cookie can be set (#5)
 
 ## [0.3.0](https://github.com/org/repo/compare/0.2.2...0.3.0) - 2022-04-11
 
