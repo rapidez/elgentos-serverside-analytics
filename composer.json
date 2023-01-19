@@ -12,7 +12,7 @@
         "illuminate/database": "^9.0",
         "illuminate/support": "^9.0",
         "illuminate/view": "^9.0",
-        "rapidez/core": "~0.54",
+        "rapidez/core": "~0.77",
         "irazasyed/laravel-gamp": "^1.9"
     },
     "autoload": {
