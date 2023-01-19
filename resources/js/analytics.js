@@ -1,4 +1,4 @@
-document.addEventListener('turbolinks:load', () => {
+document.addEventListener('turbo:load', () => {
     window.app.$on('checkout-credentials-saved', (data) => {
         if (window.config.gaUserId) {
             let options = { headers: {} }
